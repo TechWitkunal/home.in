@@ -160,9 +160,25 @@ header sub {
     border-top: 2px solid var(--color-light);
 }
 
+header sub input.input {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--main-skin-color);
+    padding: 0.3rem 0.2rem;
+    right: 2rem;
+    padding-right: 2.5rem;
+    display: none;
+    z-index: 1;
+}
+
+header sub input.input.active {
+    display: flex;
+}
+
 header sub i {
     font-size: 17px;
     font-weight: 600;
+    z-index: 2;
 }
 
 header sub .nav-lists {
