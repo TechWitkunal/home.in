@@ -1,0 +1,119 @@
+@media screen and (max-width: 1126px) {
+    .about-courses .card:first-child {
+        margin-left: 0.5rem;
+    }
+
+    .about-courses .card {
+        margin: 1.5rem;
+    }
+
+    .about-courses .card p {
+        font-size: 0.7rem;
+    }
+
+    .about-testimonials p {
+        font-size: 0.7rem;
+    }
+
+    .about-testimonials .card .who h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .about-testimonials .card .who p {
+        font-size: 0.6rem !important;
+    }
+
+    .about-courses h3,
+    .about-testimonials h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    header main .left-side .nav-lists,
+    .hero-section .image-clip-path {
+        display: none;
+    }
+
+    header sub .nav-lists {
+        gap: 15px;
+    }
+
+    .hero-section .d\:flex .d_column {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 881px) {
+    .about-courses .d\:flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .about-testimonials .d\:flex {
+        flex-direction: column;
+    }
+
+    .about-testimonials .card {
+        max-width: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer .d\:justify-space-bt {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer .d\:justify-space-bt .d\:flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column !important;
+        gap: 0.5rem;
+    }
+
+    .footer .line {
+        display: none;
+    }
+
+    .footer .right {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    header main .left-side-menu {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    header main .left-side-menu svg {
+        margin-left: 1rem;
+    }
+
+    header main .left-side-menu .button {
+        padding: 2px 10px;
+        margin-right: 1rem;
+    }
+
+    header main .left-side,
+    .hero-section .image-clip-path {
+        display: none;
+    }
+
+    header sub .nav-lists {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hero-section h3 {
+        font-size: 22px;
+    }
+}

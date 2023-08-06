@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s color ease-in-out;
+    transition: 0.3s backgroung-color ease-in-out;
+}
+
+:root {
+    --main-skin-color: rgb(126 34 206);
+    --main-skin-color-light: rgb(175, 96, 243);
+    --main-skin-color-hover: rgb(105, 26, 173);
+
+    --color-primary: #6C9BCF;
+    --color-danger: #ff0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+html {
+    font-size: 99%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+body.dark-mode-variables {
+    --color-background: #181a1e !important;
+    --color-white: #202528 !important;
+    --color-dark: #edeffd !important;
+    --color-dark-variant: #a3bdcc !important;
+    --color-light: rgba(0, 0, 0, 0.4) !important;
+    --box-shadow: 0 2rem 3rem var(--color-light) !important;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-skin-color);
+    border-radius: var(--border-radius-1);
+}
+
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button,
+.input {
+    outline: none;
+    border: none;
+}
+
+header {
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header main {
+    /* border-bottom: 2px solid var(--color-light); */
+    background-color: var(--color-white);
+}
+
+header main .logo a {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+header main .left-side {
+    gap: 12px;
+}
+
+header main .left-side .nav-lists {
+    gap: 12px;
+}
+
+header main .left-side .nav-lists .nav-list {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header main .left-side button.button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: var(--border-radius-1);
+}
+
+header .left-side-menu {
+    display: none;
+}
+
+header .left-side-menu .nav-lists {
+    position: absolute;
+    top: 121px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 15px;
+    padding: 10px 0;
+    z-index: 1000;
+    display: none;
+    transition: 0.3s all ease-in-out;
+}
+
+header .left-side-menu .nav-lists.active {
+    /* transition: 0.3s all ease-in-out; */
+    display: flex;
+}
+
+
+header .left-side-menu .nav-lists h4 {
+    display: flex;
+    align-items: center;
+}
+
+header sub {
+    background-color: var(--color-white);
+    /* margin-top: -5px; */
+    border-top: 2px solid var(--color-light);
+}
+
+header sub i {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+header sub .nav-lists {
+    gap: 50px;
+}
+
+header sub .nav-lists .nav-list {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.hero-section h3 {
+    font-size: 32px;
+    color: var(--color-dark);
+}
+
+.hero-section h3 span {
+    color: var(--main-skin-color);
+}
+
+.hero-section h4 {
+    font-size: 22px;
+    margin: 1rem 0;
+    color: var(--color-dark)
+}
+
+/* body.dark-mode-variables .hero-section h4  */
+
+.hero-section h4 span {
+    color: var(--main-skin-color);
+}
+
+.hero-section p {
+    width: 80%;
+    line-height: 20px;
+    word-spacing: 2px;
+    color: var(--color-dark-variant);
+    /* margin-bottom: 1rem; */
+}
+
+body.dark-mode-variables .button {
+    color: var(--color-dark);
+}
+
+.hero-section .button {
+    margin-top: 50px;
+    margin-right: 1rem;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-1);
+}
+
+.hero-section .image-clip-path {
+    width: 90%;
+    /* background-color: blue; */
+    height: 20rem;
+    clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+
+.hero-section .image-clip-path .image {
+    background-image: url("images/hero\ image.avif");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-courses h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about-courses .card:first-child {
+    margin-left: 4.5rem;
+}
+
+.about-courses .card {
+    max-width: 23rem;
+    background-color: var(--color-white);
+    /* background-color: red; */
+}
+
+.about-courses .card .card-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-courses .card h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.about-courses .card p {
+    line-height: 1.3rem;
+}
+
+.about-testimonials h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about-testimonials .card {
+    max-width: 40rem;
+    background-color: rgb(243 244 246);
+}
+
+body.dark-mode-variables .about-testimonials .card {
+    background-color: rgb(55 65 81);
+}
+
+.about-testimonials .card svg {
+    width: 22px;
+}
+
+.about-testimonials .card .who h5 {
+    font-size: 1.1rem;
+}
+
+.about-testimonials .card .who p {
+    font-size: 0.8rem;
+}
+
+.footer .left .me {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--color-dark);
+}
+
+.footer .line {
+    border: 1px solid var(--color-dark);
+    height: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.footer .right {
+    gap: 1rem;
+    margin-right: 3rem;
+}
